@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "ScamShield",
+    "description": "AI Powered Scam Detector",
+    "version": "1.0",
+    "action": {
+      "default_popup": "home.html",
+      "default_icon": "icon.jpg"
+    },
+    "content_scripts": [
+    {
+      "js": ["scripts/checker.js"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+    ],
+    "web_accessible_resources": [
+        {
+        "matches": ["<all_urls>"],
+        "resources": ["scripts/index.mjs"]
+        }
+    ]
+}
