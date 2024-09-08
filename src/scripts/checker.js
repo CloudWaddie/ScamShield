@@ -22,7 +22,7 @@ async function getPageHTML() {
       console.log(genAILibUrl);
       const contentScript = await import(genAILibUrl);
   
-      const API_KEY = "AIzaSyDKmMsbeZL2AS5_efC3KPPwuVYYzHaGuFc";
+      const API_KEY = "INSERT API KEY";
       const genAI = new contentScript.GoogleGenerativeAI(API_KEY);
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   
